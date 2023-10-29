@@ -1,3 +1,4 @@
+// Exercice if/else
 let a = 4
 let b = 4
 let c = 3
@@ -11,7 +12,7 @@ if(c < b && a+c != 3) {
     console.log("raté")
 }
 
-
+// Exercice switch
 switch(a) {
     case b:
         console.log('a = b')
@@ -23,10 +24,12 @@ switch(a) {
         console.log('égal à rien')
 }
 
+// Exercice for
 for (let d = 2; d < 10; d++){
     console.log('oklm')
 }
 
+// Exercice while
 let e = 3
 while (e < 9) {
     e++
@@ -39,6 +42,7 @@ while (e < 9) {
     console.log(e)
 }
 
+// Exercice fonction
 let j = "Jean"
 let p = "Paul"
 let result = ''
@@ -54,6 +58,7 @@ function checkName(nom1, nom2) {
 
 checkName(j, p)
 
+// Exercice tableau
 let names = []
 
 names.push("Vincent", "Paul", "Arthur")
@@ -61,15 +66,23 @@ names.forEach(function(names){
     console.log(names, "va à la pêche")
 })
 
-
+// Exercice objet
 let student = {
     nom: 'Mathilde',
     favFood: 'Kinder',
     city: 'Paris',  
 }
 
+let values = Object.values(student)
+let result = 0
 
+values.forEach((value) => {
+    result += value.lenght
+})
 
+console.log (result)
+
+// Exercice correction
 let users = ["Stéphanie", "Gaïa", "Etienne", "Michel", "Roberta", "Julie"]
 
 function countCharacter(value) {
